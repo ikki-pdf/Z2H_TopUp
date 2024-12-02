@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zero2Hero | Tempat Top Up Game Aman, Murah dan Cepat.</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="stylehp.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&icon_names=favorite,home,search,settings" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg shadow fixed-top">
+      <div class="container">
+        <img src="../assets/logo_web/logo_nama.png" alt="logo" class="navbar-brand" width="107" height="45" />
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="../homepage/homepage.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="../homepage/homepage.html#news">News</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Calculator</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../calcu_wr/calculatorwr.html">Calculator Winrate</a></li>
+                <li><a class="dropdown-item" href="../calcu_mw/calculatormw.html">Calculator Magic Wheel</a></li>
+                <li><a class="dropdown-item" href="../calcu_zc/calculatorzc.html">Calculator Zodiac</a></li>
+              </ul>
+            </li>
+            <li id="nav-user" class="nav-item"></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Search Bar -->
+    <div class="container my-5 pt-5">
+      <form id="searchForm" class="d-flex">
+        <input id="searchInput" class="form-control me-2" type="search" placeholder="Search for game or item" aria-label="Search" />
+        <button id="searchButton" class="btn btn-outline-primary" type="button">Search</button>
+      </form>
+    </div>
+
+    <!--Carousel-->
+    <div class="container my-5">
+      <div id="customCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- Slides -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../assets/caraousel/cr_1.jpg" class="d-block w-100" alt="Slide 1" />
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/caraousel/cr_2.jpg" class="d-block w-100" alt="Slide 2" />
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/caraousel/cr_3.jpg" class="d-block w-100" alt="Slide 3" />
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#customCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#customCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!--All Games-->
+    <div class="container">
+      <h3 class="my-4">All Games.</h3>
+      <div class="row">
+        <div class="col-md-2 col-6 mb-4 game-item" id="game-mlbb">
+          <a href="../form_topup/form_topupml.html"><img src="../assets/icon_game/mlbb.jpg" class="img-fluid rounded" alt="Mobile Legends" /></a>
+          <p class="game-title text-center">Mobile Legends</p>
+        </div>
+        <div class="col-md-2 col-6 mb-4 game-item" id="game-aov">
+          <a href="../form_topup/form_topupaov.html"><img src="../assets/icon_game/aov.jpg" class="img-fluid rounded" alt="Arena of Valor" /></a>
+          <p class="game-title text-center">Arena of Valor</p>
+        </div>
+        <div class="col-md-2 col-6 mb-4 game-item" id="game-apex">
+          <a href="../form_topup/form_topupapex.html"><img src="../assets/icon_game/apexlegend.png" class="img-fluid rounded" alt="Apex Legends" /></a>
+          <p class="game-title text-center">Apex Legends</p>
+        </div>
+        <div class="col-md-2 col-6 mb-4 game-item" id="game-codm">
+          <a href="../form_topup/form_topupcodm.html"><img src="../assets/icon_game/codm.jpg" class="img-fluid rounded" alt="Call of Duty Mobile" /></a>
+          <p class="game-title text-center">Call of Duty Mobile</p>
+        </div>
+        <div class="col-md-2 col-6 mb-4 game-item" id="game-ff">
+          <a href="../form_topup/form_topupff.html"><img src="../assets/icon_game/ff.png" class="img-fluid rounded" alt="Free Fire" /></a>
+          <p class="game-title text-center">Free Fire</p>
+        </div>
+        <div class="col-md-2 col-6 mb-4 game-item" id="game-genshin">
+          <a href="../form_topup/form_topupgenshin.html"><img src="../assets/icon_game/genshin.jpg" class="img-fluid rounded" alt="Genshin Impact" /></a>
+          <p class="game-title text-center">Genshin Impact</p>
+        </div>
+        <div class="col-md-2 col-6 mb-4 game-item" id="game-valorant">
+          <a href="../form_topup/form_topupvalorant.html"><img src="../assets/icon_game/valorant.jpeg" class="img-fluid rounded" alt="Valorant" /></a>
+          <p class="game-title text-center">Valorant</p>
+        </div>
+      </div>
+    </div>
+
+    <!--Mobile Games-->
+    <div class="container">
+      <h3 class="my-4">For Mobile Games.</h3>
+      <div class="row">
+        <div class="col-md-2 col-6 mb-4 game-item" id="game-mlbb">
+          <a href="../form_topup/form_topupml.html"><img src="../assets/icon_game/mlbb.jpg" class="img-fluid rounded" alt="Mobile Legends" /></a>
+          <p class="game-title text-center">Mobile Legends</p>
+        </div>
+        <div class="col-md-2 col-6 mb-4 game-item" id="game-aov">
+          <a href="../form_topup/form_topupaov.html"><img src="../assets/icon_game/aov.jpg" class="img-fluid rounded" alt="Arena of Valor" /></a>
+          <p class="game-title text-center">Arena of Valor</p>
+        </div>
+        <div class="col-md-2 col-6 mb-4 game-item" id="game-codm">
+          <a href="../form_topup/form_topupcodm.html"><img src="../assets/icon_game/codm.jpg" class="img-fluid rounded" alt="Call of Duty Mobile" /></a>
+          <p class="game-title text-center">Call of Duty Mobile</p>
+        </div>
+        <div class="col-md-2 col-6 mb-4 game-item" id="game-ff">
+          <a href="../form_topup/form_topupff.html"><img src="../assets/icon_game/ff.png" class="img-fluid rounded" alt="Free Fire" /></a>
+          <p class="game-title text-center">Free Fire</p>
+        </div>
+        <div class="col-md-2 col-6 mb-4 game-item" id="game-genshin">
+          <a href="../form_topup/form_topupgenshin.html"><img src="../assets/icon_game/genshin.jpg" class="img-fluid rounded" alt="Genshin Impact" /></a>
+          <p class="game-title text-center">Genshin Impact</p>
+        </div>
+        <div class="col-md-2 col-6 mb-4 game-item" id="game-apex">
+          <a href="../form_topup/form_topupapex.html"><img src="../assets/icon_game/apexlegend.png" class="img-fluid rounded" alt="Apex Legends" /></a>
+          <p class="game-title text-center">Apex Legends</p>
+        </div>
+      </div>
+    </div>
+
+    <!--PC Games-->
+    <div class="container">
+      <h3 class="my-4">For PC Games.</h3>
+      <div class="row">
+        <div class="col-md-2 col-6 mb-4 game-item" id="game-valorant">
+          <a href="../form_topup/form_topupvalorant.html"><img src="../assets/icon_game/valorant.jpeg" class="img-fluid rounded" alt="Valorant" /></a>
+          <p class="game-title text-center">Valorant</p>
+        </div>
+      </div>
+    </div>
+
+    <!--News & Promotion-->
+    <div id="news" class="container mb-5">
+      <h3>News, Update & Promotion.</h3>
+      <p class="mb-5">Dapatkan informasi terbaru seputar dunia game! Temukan panduan lengkap untuk meningkatkan pengalaman bermain, serta berita terkini mengenai promo, update top-up, dan komunitas gamer.</p>
+
+      <!-- Row for the cards -->
+      <div class="row mb-3">
+        <!-- Card 1 -->
+        <!-- Card 1 -->
+        <div class="col-md-4 col-sm-6 mb-4">
+          <a href="../news/full-news.html?news=1" class="text-decoration-none">
+            <div class="card news-card h-100">
+              <img src="../assets/news/honkai x honkai.jpg" class="card-img-top" alt="HONKAI X HONKAI" />
+              <div class="card-body">
+                <h5 class="card-title">HONKAI STAR RAIL COLLABORATION WITH HONKAI IMPACT</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4 col-sm-6 mb-4">
+          <a href="../news/full-news.html?news=2" class="text-decoration-none">
+            <div class="card news-card h-100">
+              <img src="../assets/news/ff x blu luk.jpeg" class="card-img-top" alt="FF X Blue Lock" />
+              <div class="card-body">
+                <h5 class="card-title">Kolaborasi Free Fire x Blue Lock? Wow!!</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4 col-sm-6 mb-4">
+          <a href="../news/full-news.html?news=3" class="text-decoration-none">
+            <div class="card news-card h-100">
+              <img src="../assets/news/rrq.jpg" class="card-img-top" alt="RRQ Hoshi" />
+              <div class="card-body">
+                <h5 class="card-title">Tanpa Kesulitan, RRQ Hoshi Berhasil Raih Kemenangan Pertama di M6</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <a href="../news/news.html" type="button" class="btn btn-info border-dark">Lihat lebih lengkap disini</a>
+    </div>
+
+    <!--Footer-->
+    <footer class="footer">
+      <div class="footer-container">
+        <p class="description">Tempat top up game termurah, tercepat, dan terpercaya di Indonesia. Dengan proses otomatis 24 Jam dan berbagai macam fitur pembayaran.</p>
+        <div class="logos">
+          <img src="../assets/logo_web/logo.png" alt="Logo 1" class="footer-logo" />
+          <img src="../assets/logo_web/logo_nama.png" alt="Logo 2" class="footer-logo" />
+        </div>
+        <div class="social-media">
+          <p>Ikuti kami :</p>
+          <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="social-link"><i class="bi bi-youtube"></i></a>
+        </div>
+        <!-- Copyright -->
+        <p class="mb-0">&copy; 2024 Tempat Top Up Game. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="../form_masuk/scriptfm.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', updateNavbar);
+    </script>
+    <script src="scripthp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

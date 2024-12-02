@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zero2Hero | Tempat Top Up Game Aman, Murah dan Cepat.</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styleft1.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg shadow fixed-top">
+      <div class="container">
+        <img src="../assets/logo_web/logo_nama.png" alt="logo" class="navbar-brand" width="107" height="45" />
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="../homepage/homepage.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="../homepage/homepage.html#news">News</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Calculator</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../calcu_wr/calculatorwr.html">Calculator Winrate</a></li>
+                <li><a class="dropdown-item" href="../calcu_mw/calculatormw.html">Calculator Magic Wheel</a></li>
+                <li><a class="dropdown-item" href="../calcu_zc/calculatorzc.html">Calculator Zodiac</a></li>
+              </ul>
+            </li>
+            <li id="nav-user" class="nav-item"></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Banner -->
+    <img style="width: 100%; height: auto; padding: 60px 0px 0px 0px" src="../assets/ftopup/banner_ml.jpg" alt="Banner" />
+
+    <!-- Form Section -->
+    <section class="container py-5">
+      <!--profil game-->
+      <div
+        style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px; padding: 20px; max-width: 100%; box-sizing: border-box; background: linear-gradient(to right, #ffffff, #08caef); border-radius: 25px; border: 3px solid #08caef"
+      >
+        <div style="flex-shrink: 0; width: 100%; max-width: 296px; position: relative; display: flex; justify-content: center; align-items: center; background: #08caef; border-radius: 25px; overflow: hidden">
+          <img style="width: 90%; height: auto; border-radius: 22.89px" src="../assets/icon_game/apexlegend.png" alt="Apex Logo" />
+        </div>
+        <div style="flex-grow: 1; min-width: 300px; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 20px">
+          <div id="nama-game" style="color: #0b0c3a; font-size: 1.8rem; font-family: Poppins, sans-serif; font-weight: 600; word-wrap: break-word">APEX LEGEND</div>
+          <div style="color: #0b0c3a; font-size: 1.4rem; font-family: Poppins, sans-serif; font-weight: 600; word-wrap: break-word">EA</div>
+          <div style="display: flex; gap: 20px; flex-wrap: wrap">
+            <div style="color: #0b0c3a; font-size: 1rem; font-family: Poppins, sans-serif; font-weight: 400; word-wrap: break-word">Proses cepat</div>
+            <div style="color: #0b0c3a; font-size: 1rem; font-family: Poppins, sans-serif; font-weight: 400; word-wrap: break-word">Layanan 24 jam</div>
+            <div style="color: #0b0c3a; font-size: 1rem; font-family: Poppins, sans-serif; font-weight: 400; word-wrap: break-word">Aman</div>
+          </div>
+        </div>
+      </div>
+
+      <!--form top up-->
+      <form id="topupForm">
+        <!-- Account Information -->
+        <div class="mb-3">
+          <label for="id" class="form-label">Masukan ID Akun</label>
+          <input type="text" class="form-control" id="id" placeholder="ID" required />
+          <input type="text" class="form-control mt-2" id="server" placeholder="Server" required />
+        </div>
+
+        <!-- Nominal -->
+        <div class="mb-3">
+          <label for="nominal" class="form-label">Pilih Nominal</label>
+          <select class="form-select" id="nominal" required>
+            <option value="" selected>Pilih Nominal</option>
+            <option value="Syndicate Gold,13799">90 Syndicate Gold (Rp 13,799)</option>
+            <option value="Syndicate Gold,30099">280 Syndicate Gold (Rp 30,099)</option>
+            <option value="Syndicate Gold,55899">500 Syndicate Gold (Rp 55,899)</option>
+            <option value="Syndicate Gold,110899">1050 Syndicate Gold (Rp 110,899)</option>
+            <option value="Syndicate Gold,222699">2150 Syndicate Gold (Rp 222,699)</option>
+            <option value="Syndicate Gold,540799">5650 Syndicate Gold (Rp 540,799)</option>
+            <option value="Syndicate Gold,1073799">11500 Syndicate Gold (Rp 1,073,799)</option>
+            <option value="Syndicate Gold,2148299">23500 Syndicate Gold (Rp 2,148,299)</option>
+          </select>
+        </div>
+
+        <!-- Quantity -->
+        <div class="mb-3">
+          <label for="quantity" class="form-label">Jumlah Pembelian</label>
+          <div class="input-group">
+            <button type="button" class="btn btn-light" id="decrease">-</button>
+            <input type="text" class="form-control text-center" id="quantity" value="1" readonly />
+            <button type="button" class="btn btn-light" id="increase">+</button>
+          </div>
+        </div>
+
+        <!-- Total Price -->
+        <div class="mb-3">
+          <label for="total" class="form-label">Total Harga</label>
+          <input type="text" class="form-control" id="total" value="Rp 0" readonly />
+        </div>
+
+        <!-- Payment Method -->
+        <div class="mb-3">
+          <label class="form-label">Pilih metode pembayaran</label>
+          <div class="d-flex flex-wrap gap-2">
+            <button type="button" class="btn btn-light">QRIS</button>
+            <button type="button" class="btn btn-light">E-Wallet</button>
+            <button type="button" class="btn btn-light">Convenience Store</button>
+          </div>
+        </div>
+
+        <!-- Voucher Code -->
+        <div class="mb-3">
+          <label for="voucher" class="form-label">Kode Voucher</label>
+          <div class="input-group">
+            <input type="text" class="form-control" id="voucher" placeholder="Masukan kode voucher Anda" />
+            <button class="btn btn-primary">Gunakan</button>
+          </div>
+        </div>
+
+        <!-- Contact Details -->
+        <div class="mb-3">
+          <label for="contact" class="form-label">Detail kontak</label>
+          <input type="text" class="form-control" id="contact" placeholder="+62-5xxxxxxxxxx" />
+          <textarea class="form-control mt-2" id="text" rows="3" placeholder="Masukan pesan Anda..."></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <!-- Submit Button -->
+        <button type="button" class="btn btn-primary w-100" id="submitBtn">Pesan Sekarang!</button>
+      </form>
+    </section>
+    <script src="../form_masuk/scriptfm.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', updateNavbar);
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scriptft.js"></script>
+  </body>
+</html>

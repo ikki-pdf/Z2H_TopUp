@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zero2Hero | Tempat Top Up Game Aman, Murah dan Cepat.</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styleft1.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg shadow fixed-top">
+      <div class="container">
+        <img src="../assets/logo_web/logo_nama.png" alt="logo" class="navbar-brand" width="107" height="45" />
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="../homepage/homepage.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="../homepage/homepage.html#news">News</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Calculator</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../calcu_wr/calculatorwr.html">Calculator Winrate</a></li>
+                <li><a class="dropdown-item" href="../calcu_mw/calculatormw.html">Calculator Magic Wheel</a></li>
+                <li><a class="dropdown-item" href="../calcu_zc/calculatorzc.html">Calculator Zodiac</a></li>
+              </ul>
+            </li>
+            <li id="nav-user" class="nav-item"></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Banner -->
+    <img style="width: 100%; height: auto; padding: 60px 0px 0px 0px" src="../assets/ftopup/banner_ml.jpg" alt="Banner" />
+
+    <!-- Form Section -->
+    <section class="container py-5">
+      <!--profil game-->
+      <div
+        style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px; padding: 20px; max-width: 100%; box-sizing: border-box; background: linear-gradient(to right, #ffffff, #08caef); border-radius: 25px; border: 3px solid #08caef"
+      >
+        <div style="flex-shrink: 0; width: 100%; max-width: 296px; position: relative; display: flex; justify-content: center; align-items: center; background: #08caef; border-radius: 25px; overflow: hidden">
+          <img style="width: 90%; height: auto; border-radius: 22.89px" src="../assets/icon_game/ff.png" alt="Mobile Legends Logo" />
+        </div>
+        <div style="flex-grow: 1; min-width: 300px; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 20px">
+          <div id="nama-game" style="color: #0b0c3a; font-size: 1.8rem; font-family: Poppins, sans-serif; font-weight: 600; word-wrap: break-word">FREE FIRE</div>
+          <div style="color: #0b0c3a; font-size: 1.4rem; font-family: Poppins, sans-serif; font-weight: 600; word-wrap: break-word">Garena</div>
+          <div style="display: flex; gap: 20px; flex-wrap: wrap">
+            <div style="color: #0b0c3a; font-size: 1rem; font-family: Poppins, sans-serif; font-weight: 400; word-wrap: break-word">Proses cepat</div>
+            <div style="color: #0b0c3a; font-size: 1rem; font-family: Poppins, sans-serif; font-weight: 400; word-wrap: break-word">Layanan 24 jam</div>
+            <div style="color: #0b0c3a; font-size: 1rem; font-family: Poppins, sans-serif; font-weight: 400; word-wrap: break-word">Aman</div>
+          </div>
+        </div>
+      </div>
+
+      <!--form top up-->
+      <form id="topupForm">
+        <!-- Account Information -->
+        <div class="mb-3">
+          <label for="id" class="form-label">Masukan ID Akun</label>
+          <input type="text" class="form-control" id="id" placeholder="ID" required />
+          <input type="text" class="form-control mt-2" id="server" placeholder="Server" required />
+        </div>
+
+        <!-- Nominal -->
+        <div class="mb-3">
+          <label for="nominal" class="form-label">Pilih Nominal</label>
+          <select class="form-select" id="nominal" required>
+            <option value="" selected>Pilih Nominal</option>
+            <option value="Level Up Pass,13459">Level Up Pass (Rp 13,459)</option>
+            <option value="Member Mingguan,26918">Member Mingguan (Rp 26,918)</option>
+            <option value="BP Card,40377">BP Card (Rp 40,377)</option>
+            <option value="Member Bulanan,80754">Member Bulanan (Rp 80,754)</option>
+            <option value="5 Diamonds,809">5 Diamonds (Rp 809)</option>
+            <option value="12 Diamonds,1775">12 Diamonds (Rp 1,775)</option>
+            <option value="15 Diamonds,2427">15 Diamonds (Rp 2,427)</option>
+            <option value="20 Diamonds,3236">20 Diamonds (Rp 3,236)</option>
+            <option value="25 Diamonds,4045">25 Diamonds (Rp 4,045)</option>
+            <option value="30 Diamonds,4854">30 Diamonds (Rp 4,854)</option>
+            <option value="50 Diamonds,6461">50 Diamonds (Rp 6,461)</option>
+            <option value="55 Diamonds,7270">55 Diamonds (Rp 7,270)</option>
+            <option value="70 Diamonds,8873">70 Diamonds (Rp 8,873)</option>
+            <option value="75 Diamonds,9682">75 Diamonds (Rp 9,682)</option>
+            <option value="80 Diamonds,10491">80 Diamonds (Rp 10,491)</option>
+            <option value="90 Diamonds,12109">90 Diamonds (Rp 12,109)</option>
+            <option value="95 Diamonds,12918">95 Diamonds (Rp 12,918)</option>
+            <option value="100 Diamonds,12922">100 Diamonds (Rp 12,922)</option>
+            <option value="120 Diamonds,15334">120 Diamonds (Rp 15,334)</option>
+            <option value="125 Diamonds,16143">125 Diamonds (Rp 16,143)</option>
+            <option value="140 Diamonds,17745">140 Diamonds (Rp 17,745)</option>
+            <option value="145 Diamonds,18555">145 Diamonds (Rp 18,555)</option>
+            <option value="160 Diamonds,20981">160 Diamonds (Rp 20,981)</option>
+            <option value="170 Diamonds,22600">170 Diamonds (Rp 22,600)</option>
+            <option value="190 Diamonds,24207">190 Diamonds (Rp 24,207)</option>
+            <option value="180 Diamonds,24217">180 Diamonds (Rp 24,217)</option>
+            <option value="200 Diamonds,25844">200 Diamonds (Rp 25,844)</option>
+            <option value="210 Diamonds,26618">210 Diamonds (Rp 26,618)</option>
+            <option value="230 Diamonds,30698">230 Diamonds (Rp 30,698)</option>
+            <option value="250 Diamonds,32281">250 Diamonds (Rp 32,281)</option>
+            <option value="260 Diamonds,33079">260 Diamonds (Rp 33,079)</option>
+            <option value="280 Diamonds,35490">280 Diamonds (Rp 35,490)</option>
+            <option value="300 Diamonds,38726">300 Diamonds (Rp 38,726)</option>
+            <option value="355 Diamonds,44363">355 Diamonds (Rp 44,363)</option>
+            <option value="360 Diamonds,45981">360 Diamonds (Rp 45,981)</option>
+            <option value="375 Diamonds,47599">375 Diamonds (Rp 47,599)</option>
+            <option value="405 Diamonds,50824">405 Diamonds (Rp 50,824)</option>
+            <option value="425 Diamonds,53236">425 Diamonds (Rp 53,236)</option>
+            <option value="455 Diamonds,57285">455 Diamonds (Rp 57,285)</option>
+            <option value="475 Diamonds,59697">475 Diamonds (Rp 59,697)</option>
+            <option value="495 Diamonds,62108">495 Diamonds (Rp 62,108)</option>
+            <option value="500 Diamonds,62975">500 Diamonds (Rp 62,975)</option>
+            <option value="512 Diamonds,64692">512 Diamonds (Rp 64,692)</option>
+            <option value="510 Diamonds,64709">510 Diamonds (Rp 64,709)</option>
+            <option value="520 Diamonds,65344">520 Diamonds (Rp 65,344)</option>
+            <option value="545 Diamonds,69038">545 Diamonds (Rp 69,038)</option>
+            <option value="565 Diamonds,70981">565 Diamonds (Rp 70,981)</option>
+            <option value="600 Diamonds,76644">600 Diamonds (Rp 76,644)</option>
+            <option value="635 Diamonds,79853">635 Diamonds (Rp 79,853)</option>
+            <option value="645 Diamonds,81471">645 Diamonds (Rp 81,471)</option>
+            <option value="655 Diamonds,83089">655 Diamonds (Rp 83,089)</option>
+            <option value="720 Diamonds,88725">720 Diamonds (Rp 88,725)</option>
+            <option value="725 Diamonds,89534">725 Diamonds (Rp 89,534)</option>
+            <option value="740 Diamonds,91961">740 Diamonds (Rp 91,961)</option>
+            <option value="770 Diamonds,95186">770 Diamonds (Rp 95,186)</option>
+            <option value="790 Diamonds,97598">790 Diamonds (Rp 97,598)</option>
+            <option value="800 Diamonds,99216">800 Diamonds (Rp 99,216)</option>
+            <option value="820 Diamonds,101647">820 Diamonds (Rp 101,647)</option>
+            <option value="840 Diamonds,104059">840 Diamonds (Rp 104,059)</option>
+            <option value="860 Diamonds,106470">860 Diamonds (Rp 106,470)</option>
+            <option value="910 Diamonds,112931">910 Diamonds (Rp 112,931)</option>
+            <option value="930 Diamonds,115343">930 Diamonds (Rp 115,343)</option>
+            <option value="1000 Diamonds,124215">1000 Diamonds (Rp 124,215)</option>
+            <option value="1050 Diamonds,130676">1050 Diamonds (Rp 130,676)</option>
+            <option value="1060 Diamonds,132294">1060 Diamonds (Rp 132,294)</option>
+            <option value="1075 Diamonds,133088">1075 Diamonds (Rp 133,088)</option>
+            <option value="1080 Diamonds,133897">1080 Diamonds (Rp 133,897)</option>
+            <option value="1125 Diamonds,139549">1125 Diamonds (Rp 139,549)</option>
+            <option value="1145 Diamonds,141961">1145 Diamonds (Rp 141,961)</option>
+            <option value="1200 Diamonds,149231">1200 Diamonds (Rp 149,231)</option>
+            <option value="1215 Diamonds,150833">1215 Diamonds (Rp 150,833)</option>
+            <option value="1300 Diamonds,162133">1300 Diamonds (Rp 162,133)</option>
+            <option value="1440 Diamonds,177450">1440 Diamonds (Rp 177,450)</option>
+            <option value="1450 Diamonds,177450">1450 Diamonds (Rp 177,450)</option>
+            <option value="1490 Diamonds,183911">1490 Diamonds (Rp 183,911)</option>
+            <option value="1510 Diamonds,186323">1510 Diamonds (Rp 186,323)</option>
+            <option value="1580 Diamonds,195195">1580 Diamonds (Rp 195,195)</option>
+            <option value="1795 Diamonds,221813">1795 Diamonds (Rp 221,813)</option>
+            <option value="1800 Diamonds,221813">1800 Diamonds (Rp 221,813)</option>
+            <option value="1875 Diamonds,230686">1875 Diamonds (Rp 230,686)</option>
+            <option value="1975 Diamonds,244412">1975 Diamonds (Rp 244,412)</option>
+            <option value="2000 Diamonds,248430">2000 Diamonds (Rp 248,430)</option>
+            <option value="2005 Diamonds,248433">2005 Diamonds (Rp 248,433)</option>
+            <option value="2020 Diamonds,251898">2020 Diamonds (Rp 251,898)</option>
+            <option value="2100 Diamonds,259730">2100 Diamonds (Rp 259,730)</option>
+            <option value="2180 Diamonds,266175">2180 Diamonds (Rp 266,175)</option>
+            <option value="2160 Diamonds,266176">2160 Diamonds (Rp 266,176)</option>
+            <option value="2200 Diamonds,269411">2200 Diamonds (Rp 269,411)</option>
+            <option value="2210 Diamonds,271029">2210 Diamonds (Rp 271,029)</option>
+            <option value="2225 Diamonds,273456">2225 Diamonds (Rp 273,456)</option>
+            <option value="2280 Diamonds,279902">2280 Diamonds (Rp 279,902)</option>
+            <option value="2350 Diamonds,288774">2350 Diamonds (Rp 288,774)</option>
+            <option value="2355 Diamonds,289583">2355 Diamonds (Rp 289,583)</option>
+            <option value="2400 Diamonds,294411">2400 Diamonds (Rp 294,411)</option>
+            <option value="2575 Diamonds,317010">2575 Diamonds (Rp 317,010)</option>
+            <option value="2720 Diamonds,337155">2720 Diamonds (Rp 337,155)</option>
+            <option value="2750 Diamonds,337965">2750 Diamonds (Rp 337,965)</option>
+            <option value="3000 Diamonds,367822">3000 Diamonds (Rp 367,822)</option>
+            <option value="3310 Diamonds,406533">3310 Diamonds (Rp 406,533)</option>
+            <option value="3640 Diamonds,443625">3640 Diamonds (Rp 443,625)</option>
+            <option value="3675 Diamonds,449288">3675 Diamonds (Rp 449,288)</option>
+            <option value="3800 Diamonds,464606">3800 Diamonds (Rp 464,606)</option>
+            <option value="4000 Diamonds,488797">4000 Diamonds (Rp 488,797)</option>
+            <option value="4050 Diamonds,495258">4050 Diamonds (Rp 495,258)</option>
+            <option value="4340 Diamonds,533162">4340 Diamonds (Rp 533,162)</option>
+            <option value="4450 Diamonds,544459">4450 Diamonds (Rp 544,459)</option>
+            <option value="4720 Diamonds,577522">4720 Diamonds (Rp 577,522)</option>
+            <option value="4800 Diamonds,588013">4800 Diamonds (Rp 588,013)</option>
+            <option value="4850 Diamonds,595270">4850 Diamonds (Rp 595,270)</option>
+            <option value="5500 Diamonds,672708">5500 Diamonds (Rp 672,708)</option>
+            <option value="5600 Diamonds,683992">5600 Diamonds (Rp 683,992)</option>
+            <option value="6000 Diamonds,734017">6000 Diamonds (Rp 734,017)</option>
+            <option value="6480 Diamonds,793698">6480 Diamonds (Rp 793,698)</option>
+            <option value="6550 Diamonds,801762">6550 Diamonds (Rp 801,762)</option>
+            <option value="6900 Diamonds,843697">6900 Diamonds (Rp 843,697)</option>
+            <option value="7290 Diamonds,887250">7290 Diamonds (Rp 887,250)</option>
+            <option value="7295 Diamonds,888059">7295 Diamonds (Rp 888,059)</option>
+            <option value="7310 Diamonds,890486">7310 Diamonds (Rp 890,486)</option>
+            <option value="7340 Diamonds,893711">7340 Diamonds (Rp 893,711)</option>
+            <option value="7360 Diamonds,896123">7360 Diamonds (Rp 896,123)</option>
+            <option value="7430 Diamonds,904995">7430 Diamonds (Rp 904,995)</option>
+            <option value="7645 Diamonds,931613">7645 Diamonds (Rp 931,613)</option>
+            <option value="7650 Diamonds,932422">7650 Diamonds (Rp 932,422)</option>
+            <option value="8010 Diamonds,975975">8010 Diamonds (Rp 975,975)</option>
+            <option value="8730 Diamonds,1064700">8730 Diamonds (Rp 1,064,700)</option>
+            <option value="9290 Diamonds,1134078">9290 Diamonds (Rp 1,134,078)</option>
+            <option value="9800 Diamonds,1195376">9800 Diamonds (Rp 1,195,376)</option>
+            <option value="14580 Diamonds,1774500">14580 Diamonds (Rp 1,774,500)</option>
+            <option value="36500 Diamonds,4436250">36500 Diamonds (Rp 4,436,250)</option>
+            <option value="37050 Diamonds,4505628">37050 Diamonds (Rp 4,505,628)</option>
+            <option value="73100 Diamonds,8872500">73100 Diamonds (Rp 8,872,500)</option>
+          </select>
+        </div>
+
+        <!-- Quantity -->
+        <div class="mb-3">
+          <label for="quantity" class="form-label">Jumlah Pembelian</label>
+          <div class="input-group">
+            <button type="button" class="btn btn-light" id="decrease">-</button>
+            <input type="text" class="form-control text-center" id="quantity" value="1" readonly />
+            <button type="button" class="btn btn-light" id="increase">+</button>
+          </div>
+        </div>
+
+        <!-- Total Price -->
+        <div class="mb-3">
+          <label for="total" class="form-label">Total Harga</label>
+          <input type="text" class="form-control" id="total" value="Rp 0" readonly />
+        </div>
+
+        <!-- Payment Method -->
+        <div class="mb-3">
+          <label class="form-label">Pilih metode pembayaran</label>
+          <div class="d-flex flex-wrap gap-2">
+            <button type="button" class="btn btn-light">QRIS</button>
+            <button type="button" class="btn btn-light">E-Wallet</button>
+            <button type="button" class="btn btn-light">Convenience Store</button>
+          </div>
+        </div>
+
+        <!-- Voucher Code -->
+        <div class="mb-3">
+          <label for="voucher" class="form-label">Kode Voucher</label>
+          <div class="input-group">
+            <input type="text" class="form-control" id="voucher" placeholder="Masukan kode voucher Anda" />
+            <button class="btn btn-primary">Gunakan</button>
+          </div>
+        </div>
+
+        <!-- Contact Details -->
+        <div class="mb-3">
+          <label for="contact" class="form-label">Detail kontak</label>
+          <input type="text" class="form-control" id="contact" placeholder="+62-5xxxxxxxxxx" />
+          <textarea class="form-control mt-2" id="text" rows="3" placeholder="Masukan pesan Anda..."></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <!-- Submit Button -->
+        <button type="button" class="btn btn-primary w-100" id="submitBtn">Pesan Sekarang!</button>
+      </form>
+    </section>
+    <script src="../form_masuk/scriptfm.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', updateNavbar);
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scriptft.js"></script>
+  </body>
+</html>

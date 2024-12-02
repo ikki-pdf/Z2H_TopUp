@@ -1,0 +1,134 @@
+body {
+  background-image: url(../assets/calcu/bg_calcu.jpg);
+  padding: 0;
+  margin: 0;
+  min-height: 100vh; /* Agar mencakup seluruh tinggi */
+  background-size: cover; /* Memastikan mencakup seluruh area */
+  font-family: 'Poppins', sans-serif;
+}
+/*Navbar*/
+.navbar {
+  background-color: #08caef;
+}
+
+.nav-item {
+  color: #0b0c3a;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Kalkulator Styles */
+/* General Styling */
+
+.container-wrapper {
+  margin-top: 100px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 40px;
+  max-width: 600px;
+  width: 90%;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.logo {
+  margin-bottom: 20px;
+  width: 80px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0b0c3a;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  color: #0b0c3a;
+  margin: 10px 0;
+}
+
+label {
+  font-size: 14px;
+  color: #555;
+  display: block;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+/* Slider Styling */
+.slider-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Jarak antara slider dan angka di sisi kiri-kanan */
+}
+
+#magic-core {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  background: #00bfff;
+  outline: none;
+}
+
+#magic-core::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #007acc;
+  cursor: pointer;
+}
+
+#magic-core::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #007acc;
+  cursor: pointer;
+}
+
+/* Slider Values (Angka di sisi slider) */
+.slider-value-left,
+.slider-value-right {
+  font-size: 14px;
+  color: #555;
+  width: 30px;
+  text-align: center;
+}
+
+/* Core Display Section */
+.core-display {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #0b0c3a;
+}
+
+.result-display {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #007acc;
+}
+
+/* Button Styling */
+.topup-button {
+  margin-top: 20px;
+  display: inline-block;
+  background-color: #00bfff;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.topup-button:hover {
+  background-color: #007acc;
+}

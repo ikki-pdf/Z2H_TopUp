@@ -1,0 +1,63 @@
+/*navbar*/
+.navbar {
+  background-color: #08caef;
+}
+
+.nav-item {
+  color: #0b0c3a;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background: linear-gradient(to right, #08caef, #ffffff);
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Header Section */
+#header-section {
+  background: #001f54;
+  color: white;
+}
+
+#header-section .btn {
+  background-color: #007bff;
+  border: none;
+}
+
+/* Game Section */
+#game-section {
+  background: #e6f7ff;
+}
+
+#game-section .game-img {
+  width: 100px;
+  border-radius: 10px;
+}
+
+/* Form Section */
+#form-section .form-label {
+  font-weight: bold;
+}
+
+#form-section .btn-light {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+}
+
+/* Footer Section */
+#footer-section {
+  background: #f8f9fa;
+}
+
+#footer-section img {
+  width: 24px;
+  height: 24px;
+}

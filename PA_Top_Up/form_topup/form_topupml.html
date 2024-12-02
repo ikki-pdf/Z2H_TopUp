@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zero2Hero | Tempat Top Up Game Aman, Murah dan Cepat.</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styleft1.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg shadow fixed-top">
+      <div class="container">
+        <img src="../assets/logo_web/logo_nama.png" alt="logo" class="navbar-brand" width="107" height="45" />
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="../homepage/homepage.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="../homepage/homepage.html#news">News</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Calculator</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../calcu_wr/calculatorwr.html">Calculator Winrate</a></li>
+                <li><a class="dropdown-item" href="../calcu_mw/calculatormw.html">Calculator Magic Wheel</a></li>
+                <li><a class="dropdown-item" href="../calcu_zc/calculatorzc.html">Calculator Zodiac</a></li>
+              </ul>
+            </li>
+            <li id="nav-user" class="nav-item"></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Banner -->
+    <img style="width: 100%; height: auto; padding: 60px 0px 0px 0px" src="../assets/ftopup/banner_ml.jpg" alt="Banner" />
+
+    <!-- Form Section -->
+    <section class="container py-5">
+      <!--profil game-->
+      <div
+        style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px; padding: 20px; max-width: 100%; box-sizing: border-box; background: linear-gradient(to right, #ffffff, #08caef); border-radius: 25px; border: 3px solid #08caef"
+      >
+        <div style="flex-shrink: 0; width: 100%; max-width: 296px; position: relative; display: flex; justify-content: center; align-items: center; background: #08caef; border-radius: 25px; overflow: hidden">
+          <img style="width: 90%; height: auto; border-radius: 22.89px" src="../assets/icon_game/mlbb.jpg" alt="Mobile Legends Logo" />
+        </div>
+        <div style="flex-grow: 1; min-width: 300px; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 20px">
+          <div id="nama-game" style="color: #0b0c3a; font-size: 1.8rem; font-family: Poppins, sans-serif; font-weight: 600; word-wrap: break-word">MOBILE LEGEND</div>
+          <div style="color: #0b0c3a; font-size: 1.4rem; font-family: Poppins, sans-serif; font-weight: 600; word-wrap: break-word">Moonton</div>
+          <div style="display: flex; gap: 20px; flex-wrap: wrap">
+            <div style="color: #0b0c3a; font-size: 1rem; font-family: Poppins, sans-serif; font-weight: 400; word-wrap: break-word">Proses cepat</div>
+            <div style="color: #0b0c3a; font-size: 1rem; font-family: Poppins, sans-serif; font-weight: 400; word-wrap: break-word">Layanan 24 jam</div>
+            <div style="color: #0b0c3a; font-size: 1rem; font-family: Poppins, sans-serif; font-weight: 400; word-wrap: break-word">Aman</div>
+          </div>
+        </div>
+      </div>
+
+      <!--form top up-->
+      <form id="topupForm">
+        <!-- Account Information -->
+        <div class="mb-3">
+          <label for="id" class="form-label">Masukan ID Akun</label>
+          <input type="text" class="form-control" id="id" placeholder="ID" required />
+          <input type="text" class="form-control mt-2" id="server" placeholder="Server" required />
+        </div>
+
+        <!-- Nominal -->
+        <div class="mb-3">
+          <label for="nominal" class="form-label">Pilih Nominal</label>
+          <select class="form-select" id="nominal" required>
+            <option value="" selected>Pilih Nominal</option>
+            <option value="weekly,26000">Weekly Diamond Pass (Rp 26,500)</option>
+            <option value="twilight,148000">Twilight Pass (Rp 148,000)</option>
+            <option value="instant,1500">5 diamonds (Rp 1,500)</option>
+            <option value="instant,3043">10 diamonds (Rp 3,043)</option>
+            <option value="instant,3500">12 diamonds (Rp 3,500)</option>
+            <option value="instant,4058">14 diamonds (Rp 4,058)</option>
+            <option value="instant,4500">15 diamonds (Rp 4,500)</option>
+            <option value="instant,5000">17 diamonds (Rp 5,000)</option>
+            <option value="instant,5072">18 diamonds (Rp 5,072)</option>
+            <option value="instant,5502">19 diamonds (Rp 5,502)</option>
+            <option value="instant,6086">20 diamonds (Rp 6,086)</option>
+            <option value="instant,6543">22 diamonds (Rp 6,543)</option>
+            <option value="instant,8005">28 diamonds (Rp 8,005)</option>
+            <option value="instant,8572">30 diamonds (Rp 8,572)</option>
+            <option value="instant,9505">33 diamonds (Rp 9,505)</option>
+            <option value="instant,10143">36 diamonds (Rp 10,143)</option>
+            <option value="instant,12007">44 diamonds (Rp 12,007)</option>
+            <option value="instant,13115">45 diamonds (Rp 13,115)</option>
+            <option value="instant,13186">46 diamonds (Rp 13,186)</option>
+            <option value="instant,14201">50 diamonds (Rp 14,201)</option>
+            <option value="instant,15050">54 diamonds (Rp 15,050)</option>
+            <option value="instant,15507">56 diamonds (Rp 15,507)</option>
+            <option value="instant,16009">59 diamonds (Rp 16,009)</option>
+            <option value="instant,17244">60 diamonds (Rp 17,244)</option>
+            <option value="instant,17509">64 diamonds (Rp 17,509)</option>
+            <option value="instant,18579">67 diamonds (Rp 18,579)</option>
+            <option value="instant,19509">71 diamonds (Rp 19,509)</option>
+            <option value="instant,20286">74 diamonds (Rp 20,286)</option>
+            <option value="instant,24344">88 diamonds (Rp 24,344)</option>
+            <option value="instant,24581">89 diamonds (Rp 24,581)</option>
+            <option value="instant,25358">92 diamonds (Rp 25,358)</option>
+            <option value="instant,27286">98 diamonds (Rp 27,286)</option>
+            <option value="instant,27555">100 diamonds (Rp 27,555)</option>
+            <option value="instant,30429">110 diamonds (Rp 30,429)</option>
+            <option value="instant,31017">113 diamonds (Rp 31,017)</option>
+            <option value="instant,32349">116 diamonds (Rp 32,349)</option>
+            <option value="instant,35019">129 diamonds (Rp 35,019)</option>
+            <option value="instant,40572">148 diamonds (Rp 40,572)</option>
+            <option value="instant,46024">170 diamonds (Rp 46,024)</option>
+            <option value="instant,48687">176 diamonds (Rp 48,687)</option>
+            <option value="instant,60858">222 diamonds (Rp 60,858)</option>
+            <option value="instant,64898">240 diamonds (Rp 64,898)</option>
+            <option value="instant,66416">241 diamonds (Rp 66,416)</option>
+            <option value="instant,76073">277 diamonds (Rp 76,073)</option>
+            <option value="instant,76905">284 diamonds (Rp 76,905)</option>
+            <option value="instant,79860">296 diamonds (Rp 79,860)</option>
+            <option value="instant,84189">305 diamonds (Rp 84,189)</option>
+            <option value="instant,101430">370 diamonds (Rp 101,430)</option>
+            <option value="instant,105488">384 diamonds (Rp 105,488)</option>
+            <option value="instant,142002">518 diamonds (Rp 142,002)</option>
+            <option value="instant,149805">568 diamonds (Rp 149,805)</option>
+            <option value="instant,190377">716 diamonds (Rp 190,377)</option>
+            <option value="instant,199329">750 diamonds (Rp 199,329)</option>
+            <option value="instant,210663">790 diamonds (Rp 210,663)</option>
+            <option value="instant,253575">966 diamonds (Rp 253,575)</option>
+            <option value="instant,286736">1067 diamonds (Rp 286,736)</option>
+            <option value="instant,299610">1136 diamonds (Rp 299,610)</option>
+            <option value="instant,401040">1506 diamonds (Rp 401,040)</option>
+            <option value="instant,449415">1704 diamonds (Rp 449,415)</option>
+            <option value="instant,499168">2010 diamonds (Rp 499,168)</option>
+            <option value="instant,600598">2380 diamonds (Rp 600,598)</option>
+            <option value="instant,648973">2578 diamonds (Rp 648,973)</option>
+            <option value="instant,798778">3146 diamonds (Rp 798,778)</option>
+            <option value="instant,874851">3423 diamonds (Rp 874,851)</option>
+            <option value="instant,961066">3738 diamonds (Rp 961,066)</option>
+            <option value="instant,998336">4020 diamonds (Rp 998,336)</option>
+            <option value="instant,1197894">4830 diamonds (Rp 1,197,894)</option>
+            <option value="instant,1205452">4856 diamonds (Rp 1,205,452)</option>
+            <option value="instant,1249571">4958 diamonds (Rp 1,249,571)</option>
+            <option value="instant,1258752">5052 diamonds (Rp 1,258,752)</option>
+            <option value="instant,1347699">5398 diamonds (Rp 1,347,699)</option>
+            <option value="instant,1697062">6840 diamonds (Rp 1,697,062)</option>
+            <option value="instant,1798492">7210 diamonds (Rp 1,798,492)</option>
+            <option value="instant,1996672">8040 diamonds (Rp 1,996,672)</option>
+            <option value="instant,2196230">8850 diamonds (Rp 2,196,230)</option>
+            <option value="instant,2395788">9660 diamonds (Rp 2,395,788)</option>
+            <option value="instant,2495840">10050 diamonds (Rp 2,495,840)</option>
+            <option value="instant,3993344">16080 diamonds (Rp 3,993,344)</option>
+            <option value="instant,4991680">20100 diamonds (Rp 4,991,680)</option>
+          </select>
+        </div>
+
+        <!-- Quantity -->
+        <div class="mb-3">
+          <label for="quantity" class="form-label">Jumlah Pembelian</label>
+          <div class="input-group">
+            <button type="button" class="btn btn-light" id="decrease">-</button>
+            <input type="text" class="form-control text-center" id="quantity" value="1" readonly />
+            <button type="button" class="btn btn-light" id="increase">+</button>
+          </div>
+        </div>
+
+        <!-- Total Price -->
+        <div class="mb-3">
+          <label for="total" class="form-label">Total Harga</label>
+          <input type="text" class="form-control" id="total" value="Rp 0" readonly />
+        </div>
+
+        <!-- Payment Method -->
+        <div class="mb-3">
+          <label class="form-label">Pilih metode pembayaran</label>
+          <div class="d-flex flex-wrap gap-2">
+            <button type="button" class="btn btn-light">QRIS</button>
+            <button type="button" class="btn btn-light">E-Wallet</button>
+            <button type="button" class="btn btn-light">Convenience Store</button>
+          </div>
+        </div>
+
+        <!-- Voucher Code -->
+        <div class="mb-3">
+          <label for="voucher" class="form-label">Kode Voucher</label>
+          <div class="input-group">
+            <input type="text" class="form-control" id="voucher" placeholder="Masukan kode voucher Anda" />
+            <button class="btn btn-primary">Gunakan</button>
+          </div>
+        </div>
+
+        <!-- Contact Details -->
+        <div class="mb-3">
+          <label for="contact" class="form-label">Detail kontak</label>
+          <input type="text" class="form-control" id="contact" placeholder="+62-5xxxxxxxxxx" />
+          <textarea class="form-control mt-2" id="text" rows="3" placeholder="Masukan pesan Anda..."></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <!-- Submit Button -->
+        <button type="button" class="btn btn-primary w-100" id="submitBtn">Pesan Sekarang!</button>
+      </form>
+    </section>
+    <script src="../form_masuk/scriptfm.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', updateNavbar);
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scriptft.js"></script>
+  </body>
+</html>

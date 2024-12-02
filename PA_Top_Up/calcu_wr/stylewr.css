@@ -1,0 +1,95 @@
+body {
+  background-image: url(../assets/calcu/bg_calcu.jpg);
+  padding: 0;
+  margin: 0;
+  min-height: 100vh; /* Agar mencakup seluruh tinggi */
+  background-size: cover; /* Memastikan mencakup seluruh area */
+  font-family: 'Poppins', sans-serif;
+}
+/*Navbar*/
+.navbar {
+  background-color: #08caef;
+}
+
+.nav-item {
+  color: #0b0c3a;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Kalkulator Styles */
+.container-wrapper {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.logo {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(0, 132, 255, 0.1);
+  font-size: 14px;
+  color: #333;
+  outline: none;
+}
+
+input:focus {
+  background: rgba(0, 132, 255, 0.2);
+}
+
+#calculate {
+  background: rgba(0, 132, 255, 0.8);
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 100%;
+}
+
+#calculate:hover {
+  background: rgba(0, 132, 255, 1);
+}
+
+#result {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 15px;
+  color: #333;
+}
